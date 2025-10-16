@@ -182,268 +182,22 @@ nav ul li a:hover {
 
 /* ===== SERVICES SECTION ===== */
 .services { background:#fff; padding:80px 10%; text-align:center; }
-.services {
-  background: #fff;
-  padding: 80px 10%;
-  text-align: center;
-}
+.services h2 { font-size:36px; font-weight:800; margin-bottom:40px; background:linear-gradient(90deg,#04ff8a,#00bcd4); -webkit-background-clip:text; -webkit-text-fill-color:transparent; }
+.services-container { display:flex; gap:20px; justify-content:center; flex-wrap:wrap; }
+.service-box { position:relative; flex:1; min-width:300px; max-width:560px; height:380px; border-radius:16px; overflow:hidden; box-shadow:0 10px 30px rgba(0,0,0,0.08); cursor:pointer; }
+.service-box .img { position:absolute; inset:0; width:100%; height:100%; object-fit:cover; z-index:1; transition:transform 0.5s ease; }
+.service-box:hover .img { transform:scale(1.05); }
+.service-title { position:absolute; bottom:22px; left:22px; color:#00bcd4; font-size:18px; font-weight:700; z-index:2; display:flex; align-items:center; gap:12px; transition:opacity 0.35s ease; }
+.service-title .underline{ width:80px; height:3px; background:linear-gradient(90deg,#04ff8a,#00bcd4); }
+.service-box:hover .service-title { opacity:0; }
+.overlay { position:absolute; inset:0; background:rgba(0,0,0,0.75); color:#fff; padding:30px; opacity:0; visibility:hidden; transition:opacity 0.35s ease, visibility 0.35s ease; z-index:3; display:flex; flex-direction:column; justify-content:center; align-items:flex-start; }
+.service-box:hover .overlay { opacity:1; visibility:visible; }
+.overlay h3{ font-size:20px; margin-bottom:12px; }
+.overlay p{ font-size:15px; line-height:1.6; margin-bottom:12px; }
+.overlay ul{ list-style:none; padding:0; margin:0; }
+.overlay li{ margin-bottom:8px; display:flex; align-items:center; gap:10px; }
+.overlay li i{ color:#04ff8a; }
 
-.services h2 {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 40px;
-  background: linear-gradient(90deg, #04ff8a, #00bcd4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.services-container {
-  display: flex;
-  gap: 20px;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-
-.service-box {
-  position: relative;
-  flex: 1;
-  min-width: 300px;
-  max-width: 560px;
-  height: 380px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.service-box .img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  transition: transform 0.5s ease;
-}
-
-.service-box:hover .img {
-  transform: scale(1.05);
-}
-
-.service-title {
-  position: absolute;
-  bottom: 22px;
-  left: 22px;
-  color: #00bcd4;
-  font-size: 18px;
-  font-weight: 700;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  transition: opacity 0.35s ease;
-}
-
-.service-title .underline {
-  width: 80px;
-  height: 3px;
-  background: linear-gradient(90deg, #04ff8a, #00bcd4);
-}
-
-.service-box:hover .service-title {
-  opacity: 0;
-}
-
-.overlay {
-  position: absolute;
-  inset: 0;
-.services {
-  background: #fff;
-  padding: 80px 10%;
-  text-align: center;
-}
-
-.services h2 {
-  font-size: 36px;
-  font-weight: 800;
-  margin-bottom: 40px;
-  background: linear-gradient(90deg, #04ff8a, #00bcd4);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-}
-
-.services-container {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 20px;
-  justify-content: center;
-}
-
-.service-box {
-  position: relative;
-  flex: 1 1 calc(50% - 20px);
-  min-width: 280px;
-  max-width: 560px;
-  height: 380px;
-  border-radius: 16px;
-  overflow: hidden;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
-  cursor: pointer;
-  transition: transform 0.3s ease;
-}
-
-.service-box .img {
-  position: absolute;
-  inset: 0;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-  z-index: 1;
-  transition: transform 0.5s ease;
-}
-
-.service-box:hover .img {
-  transform: scale(1.05);
-}
-
-.service-title {
-  position: absolute;
-  bottom: 22px;
-  left: 22px;
-  color: #00bcd4;
-  font-size: 18px;
-  font-weight: 700;
-  z-index: 2;
-  display: flex;
-  align-items: center;
-  gap: 12px;
-  transition: opacity 0.35s ease;
-}
-
-.service-title .underline {
-  width: 80px;
-  height: 3px;
-.services { 
-    background: #fff; 
-    padding: 80px 10%; 
-    text-align: center; 
-}    
-
-.services h2 { 
-    font-size: 36px; 
-    font-weight: 800; 
-    margin-bottom: 40px; 
-    background: linear-gradient(90deg, #04ff8a, #00bcd4); 
-    -webkit-background-clip: text; 
-    -webkit-text-fill-color: transparent; 
-}    
-
-.services-container { 
-    display: flex; 
-    gap: 20px; 
-    justify-content: center; 
-    flex-wrap: wrap; 
-}    
-
-.service-box { 
-    position: relative; 
-    flex: 1; 
-    min-width: 300px; 
-    max-width: 560px; 
-    height: 380px; 
-    border-radius: 16px; 
-    overflow: hidden; 
-    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
-    cursor: pointer; 
-}    
-
-.service-box .img { 
-    position: absolute; 
-    inset: 0; 
-    width: 100%; 
-    height: 100%; 
-    object-fit: cover; 
-    z-index: 1; 
-    transition: transform 0.5s ease; 
-}    
-
-.service-box:hover .img { 
-    transform: scale(1.05); 
-}    
-
-.service-title { 
-    position: absolute; 
-    bottom: 22px; 
-    left: 22px; 
-    color: #00bcd4; 
-    font-size: 18px; 
-    font-weight: 700; 
-    z-index: 2; 
-    display: flex; 
-    align-items: center; 
-    gap: 12px; 
-    transition: opacity 0.35s ease; 
-}    
-
-.service-title .underline { 
-    width: 80px; 
-    height: 3px; 
-    background: linear-gradient(90deg, #04ff8a, #00bcd4); 
-}    
-
-.service-box:hover .service-title { 
-    opacity: 0; 
-}    
-
-.overlay { 
-    position: absolute; 
-    inset: 0; 
-    background: rgba(0, 0, 0, 0.75); 
-    color: #fff; 
-    padding: 30px; 
-    opacity: 0; 
-    visibility: hidden; 
-    transition: opacity 0.35s ease, visibility 0.35s ease; 
-    z-index: 3; 
-    display: flex; 
-    flex-direction: column; 
-    justify-content: center; 
-    align-items: flex-start; 
-}    
-
-.service-box:hover .overlay { 
-    opacity: 1; 
-    visibility: visible; 
-}    
-
-.overlay h3 { 
-    font-size: 20px; 
-    margin-bottom: 12px; 
-}    
-
-.overlay p { 
-    font-size: 15px; 
-    line-height: 1.6; 
-    margin-bottom: 12px; 
-}    
-
-.overlay ul { 
-    list-style: none; 
-    padding: 0; 
-    margin: 0; 
-}    
-
-.overlay li { 
-    margin-bottom: 8px; 
-    display: flex; 
-    align-items: center; 
-    gap: 10px; 
-}    
-
-.overlay li i { 
-    color: #04ff8a; 
-}
 /* ===== PROJECTS SECTION ===== */
 .projects-section {
     background-color: #0d121c;
@@ -723,29 +477,39 @@ c
 
 /* ===== MEDIA QUERIES (Combined) ===== */
 @media (max-width: 900px) {
-    /* HEADER FIXES: Converts horizontal header to vertical stack */
+    /* HEADER FIXES */
     .header-container {
-        flex-direction: column; 
+        flex-direction: column;
         align-items: center; 
         padding-bottom: 20px;
     }
-
     nav ul {
         flex-direction: column;
         align-items: center;
         gap: 0; 
         padding-top: 10px;
     }
-
     nav ul li {
         margin: 5px 0;
     }
 
-    /* YOUR ORIGINAL 900px RULES */
+    /* FIXES FOR SERVICES AND OTHER SECTIONS */
     .about {flex-direction:column;}
     .values-container {flex-direction:column; align-items:center;}
     .value-box {max-width:400px;}
-    .services-container {flex-direction:column; align-items:center;}
+    
+    /* SERVICES SECTION FIX (Ensures stacking and image visibility) */
+    .services-container {
+        flex-direction:column; /* Stacks the service cards vertically */
+        align-items:center;
+        padding: 20px 0; /* Add padding to prevent any vertical collapse */
+    }
+    .services-container img { /* Fixes the missing/collapsed images */
+        width: 100%;
+        height: auto;
+        max-width: 450px;
+    }
+    
     .projects-grid {grid-template-columns: 1fr;}
     .projects-section .section-title {font-size: 2em;}
     .footer-bottom-content {
@@ -891,73 +655,41 @@ c
     </section>
 
     <section class="services" id="services">
-        <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services</title>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Our Services</title>
-  <link rel="stylesheet" href="style.css" />
-  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
-</head>
-<body>
-
-<section class="services" id="services">
-  <section class="services">
-    <h2>OUR SERVICES</h2>    
-    <div class="services-container">    
-
-        <!-- Service Box 1 -->
-        <div class="service-box">    
-            <img class="img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1500&q=80" alt="Project Management">    
-
-            <div class="overlay">    
-                <h3>Project Management</h3>    
-                <p>Utilising our wealth of knowledge and experience, we strive to ensure projects are executed safely and efficiently. We provide the following consultancy services:</p>    
-                <ul>    
-                    <li><i class="fas fa-check-circle"></i> Project Feasibilities and Tendering Services</li>    
-                    <li><i class="fas fa-check-circle"></i> Contract Management and Review</li>    
-                    <li><i class="fas fa-check-circle"></i> Procurement, Program & Resource Management</li>    
-                    <li><i class="fas fa-check-circle"></i> On-Site Delivery Assistance</li>    
-                    <li><i class="fas fa-check-circle"></i> Quality Assurance and Management</li>    
-                </ul>    
-            </div>    
-
-            <div class="service-title">PROJECT MANAGEMENT 
-                <div class="underline"></div>
-            </div>    
-        </div>    
-
-        <!-- Service Box 2 -->
-        <div class="service-box">    
-            <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwfEJXtol2cq0sumVbf9_YD8CmaDUh9tD1w&s" alt="Construction Projects">    
-
-            <div class="overlay">    
-                <h3>Construction Projects</h3>    
-                <p>Leveraging our extensive management and consulting experience, Arcon Civil provides end-to-end oversight for a wide range of works, including:</p>    
-                <ul>    
-                    <li><i class="fas fa-check-circle"></i> Bulk Earthworks</li>    
-                    <li><i class="fas fa-check-circle"></i> Subgrade Remediation</li>    
-                    <li><i class="fas fa-check-circle"></i> Stormwater Drainage</li>    
-                    <li><i class="fas fa-check-circle"></i> Concrete Pavements</li>    
-                    <li><i class="fas fa-check-circle"></i> Road Formation and Sealing</li>    
-                    <li><i class="fas fa-check-circle"></i> Road Furnishings</li>    
-                </ul>    
-            </div>    
-
-            <div class="service-title">CONSTRUCTION PROJECTS 
-                <div class="underline"></div>
-            </div>    
-        </div>    
-
-    </div>    
-</section>
+        <h2>OUR SERVICES</h2>
+        <div class="services-container">
+            <div class="service-box">
+                <img class="img" src="https://images.unsplash.com/photo-1521791136064-7986c2920216?auto=format&fit=crop&w=1500&q=80" alt="Project Management">
+                <div class="overlay">
+                    <h3>Project Management</h3>
+                    <p>Utilising our wealth of knowledge and experience, we strive to ensure projects are executed safely and efficiently. We provide the following consultancy services:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Project Feasibilities and Tendering Services</li>
+                        <li><i class="fas fa-check-circle"></i> Contract Management and Review</li>
+                        <li><i class="fas fa-check-circle"></i> Procurement, Program & Resource Management</li>
+                        <li><i class="fas fa-check-circle"></i> On-Site Delivery Assistance</li>
+                        <li><i class="fas fa-check-circle"></i> Quality Assurance and Management</li>
+                    </ul>
+                </div>
+                <div class="service-title">PROJECT MANAGEMENT <div class="underline"></div></div>
+            </div>
+            <div class="service-box">
+                <img class="img" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSQwfEJXtol2cq0sumVbf9_YD8CmaDUh9tD1w&s" alt="Project Management">
+                <div class="overlay">
+                    <h3>Construction Projects</h3>
+                    <p>Leveraging our extensive management and consulting experience, Arcon Civil provides end-to-end oversight for a wide range of works, including:</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> Bulk Earthworks</li>
+                        <li><i class="fas fa-check-circle"></i> Subgrade Remediation</li>
+                        <li><i class="fas fa-check-circle"></i> Stormwater Drainage</li>
+                        <li><i class="fas fa-check-circle"></i> Concrete Pavements</li>
+                        <li><i class="fas fa-check-circle"></i> Road Formation and Sealing</li>
+                        <li><i class="fas fa-check-circle"></i> Road Furnishings</li>
+                    </ul>
+                </div>
+                <div class="service-title">CONSTRUCTION PROJECTS <div class="underline"></div></div>
+            </div>
+        </div>
+    </section>
 
     <!DOCTYPE html>
 <html lang="en">
@@ -1539,6 +1271,3 @@ c
 </script>
 </body>
 </html>
-
-
-
